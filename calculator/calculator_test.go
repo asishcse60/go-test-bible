@@ -12,7 +12,6 @@ type TestCase struct {
 }
 
 func TestCalculateIsArmstrong(t *testing.T) {
-
 	t.Run("test for all 3 digit armstrong numbers", func(t *testing.T) {
 		tests := []TestCase{
 			TestCase{name:"test for 153",value: 153, expected: true},
@@ -56,4 +55,20 @@ func TestNegativeCalculateIsArmstrong(t *testing.T) {
 		}
 	})
 
+}
+
+func BenchmarkCalculateIsArmstrong370(b *testing.B) {
+	benchmarkCalculateIsArmstrong(370, b)
+}
+func BenchmarkCalculateIsArmstrong371(b *testing.B) {
+	benchmarkCalculateIsArmstrong(371, b)
+}
+func BenchmarkCalculateIsArmstrong0(b *testing.B) {
+	benchmarkCalculateIsArmstrong(0, b)
+}
+
+func benchmarkCalculateIsArmstrong(input int, b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		CalculateIsArmstrong(input)
+	}
 }
