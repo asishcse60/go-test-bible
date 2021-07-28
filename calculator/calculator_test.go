@@ -1,11 +1,11 @@
 package calculator
+
 import (
 	"testing"
-
 )
 
 type TestCase struct {
-	name string
+	name     string
 	value    int
 	expected bool
 	actual   bool
@@ -14,10 +14,10 @@ type TestCase struct {
 func TestCalculateIsArmstrong(t *testing.T) {
 	t.Run("test for all 3 digit armstrong numbers", func(t *testing.T) {
 		tests := []TestCase{
-			TestCase{name:"test for 153",value: 153, expected: true},
-			TestCase{name:"test for 370",value: 370, expected: true},
-			TestCase{name:"test for 371",value: 371, expected: true},
-			TestCase{name:"test for 407",value: 407, expected: true},
+			{name: "test for 153", value: 153, expected: true},
+			{name: "test for 370", value: 370, expected: true},
+			{name: "test for 371", value: 371, expected: true},
+			{name: "test for 407", value: 407, expected: true},
 		}
 
 		for _, test := range tests {
@@ -34,7 +34,7 @@ func TestCalculateIsArmstrong(t *testing.T) {
 func TestNegativeCalculateIsArmstrong(t *testing.T) {
 	t.Run("should return false for 350", func(t *testing.T) {
 		testCase := TestCase{
-			value: 372,
+			value:    372,
 			expected: false,
 		}
 
@@ -45,7 +45,7 @@ func TestNegativeCalculateIsArmstrong(t *testing.T) {
 	})
 	t.Run("should return false for 300", func(t *testing.T) {
 		testCase := TestCase{
-			value: 300,
+			value:    300,
 			expected: false,
 		}
 

@@ -6,6 +6,7 @@ import (
 	"html/template"
 	"io/ioutil"
 )
+
 type PageData struct {
 	Title string `yaml:"Title"`
 	Desc  string `yaml:"Desc"`

@@ -10,12 +10,12 @@ type TestCase struct {
 
 func TestYamlToHTML(t *testing.T) {
 	testCases := []TestCase{
-		TestCase{
+		{
 			desc:     "Tests title is set properly",
 			path:     "testdata/test_01.yml",
 			expected: "<html><head><title>My Awesome Page</title></head><body>This is my awesome body</body></html>",
 		},
-		TestCase{
+		{
 			desc:     "Tests body is set properly",
 			path:     "testdata/test_02.yml",
 			expected: "<html><head><title>My Second Page</title></head><body>This is my awesome body</body></html>",

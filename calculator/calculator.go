@@ -12,7 +12,7 @@ func CalculateIsArmstrong(n int) bool {
 	return n == int(math.Pow(float64(a), 3)+math.Pow(float64(b), 3)+math.Pow(float64(c), 3))
 }
 
-func RandomNumber(n int) bool  {
+func RandomNumber(n int) bool {
 	if n > 10 {
 		return true
 	}
