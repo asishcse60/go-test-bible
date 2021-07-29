@@ -14,3 +14,4 @@ go get github.com/vektra/mockery // for mock service generation
 Most Valuable Test: End-To-End > Integration > Unit
 go test ./... --tags=integration -v
 go test ./... --tags=unit -v
+go test -race ./... // race condition test

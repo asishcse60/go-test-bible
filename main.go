@@ -8,6 +8,9 @@ import (
 )
 
 func main() {
+
+	//go race.UpdateCounter()
+	//fmt.Println("Here I am")
 	Setup()
 	fmt.Println(calculator.CalculateIsArmstrong(371))
 	log.Fatal(http.ListenAndServe(":10000", nil))
