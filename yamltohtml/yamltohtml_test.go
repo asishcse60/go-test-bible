@@ -12,7 +12,7 @@ type TestCase struct {
 	expected string
 }
 
-func TestMain(m *testing.M){
+func TestMain(m *testing.M) {
 	fmt.Println("Hello World")
 	ret := m.Run()
 	fmt.Println("Tests have executed")

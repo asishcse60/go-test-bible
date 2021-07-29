@@ -7,8 +7,8 @@ import (
 	"testing"
 )
 
-func TestHomePage(t *testing.T){
-	req := httptest.NewRequest("GET","/", nil)
+func TestHomePage(t *testing.T) {
+	req := httptest.NewRequest("GET", "/", nil)
 	ww := httptest.NewRecorder()
 	handler := http.HandlerFunc(HomePage)
 	handler.ServeHTTP(ww, req)
