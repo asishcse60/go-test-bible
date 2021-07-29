@@ -5,3 +5,4 @@ go test ./... -run=Benchmark -bench=.
 golangci-lint run
 gofmt -h
 gofmt -s -w .
+go test yamltohtml/yamltohtml_test.go -v
