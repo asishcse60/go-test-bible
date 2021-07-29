@@ -1,3 +1,4 @@
+//go:generate mockgen -destination=messageService_mocks_test.go -package=service github.com/asishcse60/go-test-bible/service MessageService
 package service
 
 import "fmt"
