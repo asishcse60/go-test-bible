@@ -11,3 +11,6 @@ go get github.com/golang/mock // for mock
 //go:generate mockgen -destination=messageService_mocks_test.go -package=service github.com/asishcse60/go-test-bible/service MessageService
 go generate ./...
 go get github.com/vektra/mockery // for mock service generation
+Most Valuable Test: End-To-End > Integration > Unit
+go test ./... --tags=integration -v
+go test ./... --tags=unit -v

@@ -31,5 +31,3 @@ func TestCustomerCharge(t *testing.T) {
 		assert.Equal(t, nil, dd)
 	})
 }
-
-
